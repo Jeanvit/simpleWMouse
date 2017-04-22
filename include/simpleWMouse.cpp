@@ -12,7 +12,7 @@ Mouse::~Mouse(){
 }
 
 void Mouse::setXYposition(const int positionX,const int positionY){
-	/* This funcion uses <Windows.h> function SetCursorPos(x,y) to instantly move the mouse cursor to the desired
+	/* This function uses <Windows.h>'s  SetCursorPos(x,y) to instantly move the mouse cursor to the desired
 	location, based on pixel localization */
 	SetCursorPos(positionX,positionY);
 }
@@ -33,12 +33,12 @@ int Mouse::getY(){
 
 
 void moveTo(const int x,const int y){
-	/* This funcion uses <Windows.h> function SetCursorPos(x,y) to instantly move the mouse cursor to the desired
+	/* This function uses <Windows.h>'s SetCursorPos(x,y) to instantly move the mouse cursor to the desired
 	location, based on pixel localization */
 	SetCursorPos(x,y);
 }
 void goToTopRight (){
-	/* This funcion uses <Windows.h> function SetCursorPos(x,y) to instantly move the mouse cursor to the top right position
+	/* This function uses <Windows.h>'s SetCursorPos(x,y) to instantly move the mouse cursor to the top right position
 	based on pixel localization */
 	RECT DesktopRect;
 	HWND hDesktop=::GetDesktopWindow();
@@ -47,7 +47,7 @@ void goToTopRight (){
 }
 
 void goToTopLeft (){
-	/* This funcion uses <Windows.h> function SetCursorPos(x,y) to instantly move the mouse cursor to the top left position
+	/* This function uses <Windows.h>'s SetCursorPos(x,y) to instantly move the mouse cursor to the top left position
 	based on pixel localization */
 	RECT DesktopRect;
 	HWND hDesktop=::GetDesktopWindow();
@@ -56,7 +56,7 @@ void goToTopLeft (){
 }
 
 void goToBottomRight (){
-	/* This funcion uses <Windows.h> function SetCursorPos(x,y) to instantly move the mouse cursor to the bottom right position
+	/* This function uses <Windows.h>'s SetCursorPos(x,y) to instantly move the mouse cursor to the bottom right position
 	based on pixel localization */
 	RECT DesktopRect;
 	HWND hDesktop=::GetDesktopWindow();
@@ -65,7 +65,7 @@ void goToBottomRight (){
 }
 
 void goToBottonLeft (){
-	/* This funcion uses <Windows.h> function SetCursorPos(x,y) to instantly move the mouse cursor to the bottom left position
+	/* This function uses <Windows.h>'s SetCursorPos(x,y) to instantly move the mouse cursor to the bottom left position
 	based on pixel localization */
 	RECT DesktopRect;
 	HWND hDesktop=::GetDesktopWindow();
@@ -74,7 +74,7 @@ void goToBottonLeft (){
 }
 
 void goToCenter (){
-	/* This funcion uses <Windows.h> function SetCursorPos(x,y) to instantly move the mouse cursor to center of the screen
+	/* This function uses <Windows.h>'s SetCursorPos(x,y) to instantly move the mouse cursor to center of the screen
 	based on pixel localization */
 	RECT DesktopRect;
 	HWND hDesktop=::GetDesktopWindow();
