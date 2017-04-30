@@ -124,45 +124,45 @@ bool CheckWheeltMouseButtonStatus()
 void LeftClick()
 {
 	/* Simulate the left click action */
-	INPUT In={0};													// Create our input.
+	INPUT In={0};										
 
-	In.type        = INPUT_MOUSE;									// Let input know we are using the mouse.
-	In.mi.dwFlags  = MOUSEEVENTF_LEFTDOWN;							// We are setting left mouse button down.
+	In.type        = INPUT_MOUSE;								
+	In.mi.dwFlags  = MOUSEEVENTF_LEFTDOWN;								//setting left mouse button down.
 	SendInput( 1, &In, sizeof(INPUT) );								// Send the input.
 
 	ZeroMemory(&In,sizeof(INPUT));									// Fills a block of memory with zeros.
-	In.type        = INPUT_MOUSE;									// Let input know we are using the mouse.
-	In.mi.dwFlags  = MOUSEEVENTF_LEFTUP;								// We are setting left mouse button up.
+	In.type        = INPUT_MOUSE;									
+	In.mi.dwFlags  = MOUSEEVENTF_LEFTUP;								// setting left mouse button up.
 	SendInput( 1, &In, sizeof(INPUT) );								// Send the input.
 }
 
 void RightClick()
 {
 	/* Simulate the right click action */
-	INPUT    In={0};													// Create our input.
+	INPUT    In={0};								
 
-	In.type        = INPUT_MOUSE;						// Let input know we are using the mouse.
-	In.mi.dwFlags  = MOUSEEVENTF_RIGHTDOWN;							// We are setting left mouse button down.
+	In.type        = INPUT_MOUSE;									
+	In.mi.dwFlags  = MOUSEEVENTF_RIGHTDOWN;								// setting right mouse button down.
 	SendInput( 1, &In, sizeof(INPUT) );								// Send the input.
 
 	ZeroMemory(&In,sizeof(INPUT));									// Fills a block of memory with zeros.
-	In.type        = INPUT_MOUSE;									// Let input know we are using the mouse.
-	In.mi.dwFlags  = MOUSEEVENTF_RIGHTUP;								// We are setting left mouse button up.
+	In.type        = INPUT_MOUSE;									
+	In.mi.dwFlags  = MOUSEEVENTF_RIGHTUP;								//setting right mouse button up.
 	SendInput( 1, &In, sizeof(INPUT) );								// Send the input.
 }
 
 void WheelClick()
 {
 	/* Simulate the Wheelbutton click action */
-	INPUT In={0};													// Create our input.
+	INPUT In={0};											
 
-	In.type        = INPUT_MOUSE;									// Let input know we are using the mouse.
-	In.mi.dwFlags  = MOUSEEVENTF_MIDDLEDOWN;							// We are setting left mouse button down.
+	In.type        = INPUT_MOUSE;									
+	In.mi.dwFlags  = MOUSEEVENTF_MIDDLEDOWN;							// setting wheel mouse button down.
 	SendInput( 1, &In, sizeof(INPUT) );								// Send the input.
 
 	ZeroMemory(&In,sizeof(INPUT));									// Fills a block of memory with zeros.
-	In.type        = INPUT_MOUSE;									// Let input know we are using the mouse.
-	In.mi.dwFlags  = MOUSEEVENTF_MIDDLEUP;								// We are setting left mouse button up.
+	In.type        = INPUT_MOUSE;									
+	In.mi.dwFlags  = MOUSEEVENTF_MIDDLEUP;								//setting wheel mouse button up.
 	SendInput( 1, &In, sizeof(INPUT) );								// Send the input.
 }
 
