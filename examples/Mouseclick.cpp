@@ -1,4 +1,4 @@
-/*Send the cursor to the center of screen, clicks with the Right Button and show the current position */
+/*Send the cursor to the center of the screen and then clicks with the Right Button and show the current position */
 
 #include "include/simpleWMouse.hpp"
 #include <iostream>
