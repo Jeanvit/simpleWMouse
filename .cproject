@@ -8,6 +8,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/simpleWMouse"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/simpleWMouse/Debug"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/simpleWMouse/dll"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/simpleWMouse/shared"/>
 						<entry flags="RESOLVED" kind="libraryFile" name="simpleWMouse" srcPrefixMapping="" srcRootPath=""/>
 					</externalSetting>
 				</externalSettings>
@@ -25,7 +26,7 @@
 					<folderInfo id="cdt.managedbuild.config.gnu.mingw.lib.debug.1288217110." name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.gnu.mingw.lib.debug.1356560290" name="MinGW GCC" superClass="cdt.managedbuild.toolchain.gnu.mingw.lib.debug">
 							<targetPlatform id="cdt.managedbuild.target.gnu.platform.mingw.lib.debug.1337364731" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.mingw.lib.debug"/>
-							<builder buildPath="${workspace_loc:/simpleWMouse}/shared" id="cdt.managedbuild.builder.gnu.cross.2069209791" superClass="cdt.managedbuild.builder.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/simpleWMouse}/shared" id="cdt.managedbuild.builder.gnu.cross.2069209791" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.builder.gnu.cross"/>
 							<tool id="cdt.managedbuild.tool.gnu.assembler.mingw.lib.debug.1870639727" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.mingw.lib.debug">
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1997433662" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
@@ -81,7 +82,7 @@
 					<folderInfo id="cdt.managedbuild.config.gnu.mingw.lib.debug.1288217110.74213029." name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.gnu.mingw.lib.debug.1464449982" name="MinGW GCC" superClass="cdt.managedbuild.toolchain.gnu.mingw.lib.debug">
 							<targetPlatform id="cdt.managedbuild.target.gnu.platform.mingw.lib.debug.698594990" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.mingw.lib.debug"/>
-							<builder buildPath="${workspace_loc:/simpleWMouse}/lib" id="cdt.managedbuild.builder.gnu.cross.1091922565" superClass="cdt.managedbuild.builder.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/simpleWMouse}/lib" id="cdt.managedbuild.builder.gnu.cross.1091922565" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.builder.gnu.cross"/>
 							<tool id="cdt.managedbuild.tool.gnu.assembler.mingw.lib.debug.1308212184" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.mingw.lib.debug">
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1455247639" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
@@ -90,7 +91,7 @@
 								<option id="gnu.cpp.compiler.mingw.lib.debug.option.optimization.level.1817394846" name="Optimization Level" superClass="gnu.cpp.compiler.mingw.lib.debug.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.mingw.lib.debug.option.debugging.level.1008955952" name="Debug Level" superClass="gnu.cpp.compiler.mingw.lib.debug.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.dialect.std.125874375" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.default" valueType="enumerated"/>
-								<option id="gnu.cpp.compiler.option.include.files.1057035400" name="Include files (-include)" superClass="gnu.cpp.compiler.option.include.files" useByScannerDiscovery="false" valueType="includeFiles"/>
+								<option id="gnu.cpp.compiler.option.include.files.1057035400" name="Include files (-include)" superClass="gnu.cpp.compiler.option.include.files" useByScannerDiscovery="false"/>
 								<option id="gnu.cpp.compiler.option.include.paths.1418127121" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
 								</option>
@@ -125,6 +126,7 @@
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="shared"/>
 		<configuration configurationName="lib">
 			<resource resourceType="PROJECT" workspacePath="/simpleWMouse"/>
 		</configuration>
