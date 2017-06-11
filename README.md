@@ -4,7 +4,7 @@ simpleWMuse is a C++ library with a high level abstraction of some Windows.h mou
 
 # Building from source
 
-## Using Eclipse
+## With Eclipse
 
 There's two created configurations you can build
 
@@ -13,7 +13,7 @@ There's two created configurations you can build
 
 For doing it, click with left mouse button on your imported project, Go to `Build Configuration`, and choose the build you want or `Build all`
 
-## Using make
+## With make
 
 Inside the downloaded folder
 
@@ -29,7 +29,9 @@ cd shared
 make all
 ```
 
-## Using Static (MinGW)
+# How to use
+
+## Static (Eclipse/MinGW)
 - Build the static library 
 - Move `/include/` and `/lib/` to your new project folder
 `Right Click > Properties > C/C++ Build > Settings > GCC C++ Compiler > Includes` and then add your `/include/` folder to `Include Paths (-l)`
@@ -39,7 +41,7 @@ make all
 
 
 
-## Using Dynamic (MinGW)
+## Dynamic (Eclipse/MinGW)
 - Build the dynamic library
 - Move `/include/` and `/shared/` to your new project folder
 `Right Click > Properties > C/C++ Build > Settings > GCC C++ Compiler > Includes` and then add your `/include/` folder to `Include Paths (-l)`
