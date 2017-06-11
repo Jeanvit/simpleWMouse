@@ -1,6 +1,6 @@
 # About
 
-simpleWMuse is a C++ library with high level abstraction of some Windows.h mouse functions. Simplifying the need of additional code to just compute essential properties of the screen.
+simpleWMuse is a C++ library with a high level abstraction of some Windows.h mouse functions,  simplifying the need of additional code to just compute essential properties of the screen.
 
 # Compiling
 
@@ -11,21 +11,23 @@ There's two created configurations you can build
 * lib - compile the code as a Static Library (`lib*.a`)
 * shared - compile the code as a Dynamic Library (`lib*.dll`)
 
-For doing it, click with left mouse on your imported project on Eclipse, Go to `Build Configuration`, and choose the build you want or `Build all`
+For doing it, click with left mouse button on your imported project, Go to `Build Configuration`, and choose the build you want or `Build all`
 
 ## Using make
 
 - Inside the downloaded folder
 
-`
+- static
+```
 cd lib
 make
-`
-or
-`
+```
+
+- dynamic
+```
 cd shared
 make all
-`
+```
 
 ## Using Static (MinGW)
 
