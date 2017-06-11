@@ -2,7 +2,7 @@
 
 simpleWMuse is a C++ library with a high level abstraction of some Windows.h mouse functions,  simplifying the need of additional code to just compute essential properties of the screen.
 
-# Compiling
+# Building from source
 
 ## Using Eclipse
 
@@ -15,23 +15,23 @@ For doing it, click with left mouse button on your imported project, Go to `Buil
 
 ## Using make
 
-- Inside the downloaded folder
+Inside the downloaded folder
 
-- static
+- For static 
 ```
 cd lib
 make
 ```
 
-- dynamic
+- For dynamic 
 ```
 cd shared
 make all
 ```
 
 ## Using Static (MinGW)
-
-- After the compiling, move `/include/` and `/lib/` to your new project folder
+- Build the static library 
+- Move `/include/` and `/lib/` to your new project folder
 `Right Click > Properties > C/C++ Build > Settings > GCC C++ Compiler > Includes` and then add your `/include/` folder to `Include Paths (-l)`
 - Then go to `MinGW C++ Linker > Libraries`
 - Chose `lib` folder on `Library search path (-l)`
@@ -40,8 +40,8 @@ make all
 
 
 ## Using Dynamic (MinGW)
-
-- After the compiling, move `/include/` and `/shared/` to your new project folder
+- Build the dynamic library
+- Move `/include/` and `/shared/` to your new project folder
 `Right Click > Properties > C/C++ Build > Settings > GCC C++ Compiler > Includes` and then add your `/include/` folder to `Include Paths (-l)`
 - Then go to `MinGW C++ Linker > Libraries`
 - Chose `shared` folder on `Library search path (-l)`
