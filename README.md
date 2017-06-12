@@ -35,9 +35,9 @@ make all
 - Build the static library 
 - Move `/include/` and `/lib/` to your new project folder
 `Right Click > Properties > C/C++ Build > Settings > GCC C++ Compiler > Includes` and then add your `/include/` folder to `Include Paths (-l)`
-- Then go to `MinGW C++ Linker > Libraries`
+- Go to `MinGW C++ Linker > Libraries`
 - Chose `lib` folder on `Library search path (-l)`
-- Insert `simpleWMouse` in the field above, on `Libraries (-l)`
+- Insert `simpleWMouse` on `Libraries (-l)`
 
 
 
@@ -45,7 +45,7 @@ make all
 - Build the dynamic library
 - Move `/include/` and `/shared/` to your new project folder
 `Right Click > Properties > C/C++ Build > Settings > GCC C++ Compiler > Includes` and then add your `/include/` folder to `Include Paths (-l)`
-- Then go to `MinGW C++ Linker > Libraries`
+- Go to `MinGW C++ Linker > Libraries`
 - Chose `shared` folder on `Library search path (-l)`
-- Insert `simpleWMouse` in the field above, on `Libraries (-l)`
+- Insert `simpleWMouse` on `Libraries (-l)`
 - Put `libsimpleWMouse.dll` file in the same folder as the generated executable
